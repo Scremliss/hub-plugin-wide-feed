@@ -1,24 +1,25 @@
-# wide-feed — широкая лента для Agents Hub
+# wide-feed — a wide feed for Agents Hub
 
-Плагин страницы хаба: лента сообщений и поле ввода занимают колонку до 1500 px вместо 800 px, а строка текста — до
-125 знаков вместо 68. На большом окне по бокам больше нет пустых полей; на узком колонка по-прежнему на всю ширину,
-с симметричными полями от 12 до 70 px.
+A hub page plugin: the message feed and the input field take a column of up to 1500 px instead of the theme's own
+(800 px in Classic, 1104 px in Clean), and a line of text up to 125 characters instead of 68. On a big window there are
+no more empty margins at the sides; on a narrow one the column still takes the full width, with symmetric margins from
+12 to 70 px.
 
-![Было и стало](screenshot.png)
+![Before and after](screenshot.png)
 
-## Как поставить
+## Install
 
-В Agents Hub: «Настройки» → «Плагины» → «Найти» → `wide-feed`.
-Или хабу: «поставь плагин `Scremliss/hub-plugin-wide-feed`» (`hub market install Scremliss/hub-plugin-wide-feed`).
-Выключить — там же, в «Плагинах».
+In Agents Hub: "Settings" → "Plugins" → "Find" → `wide-feed`.
+Or tell the hub: "install the plugin `Scremliss/hub-plugin-wide-feed`" (`hub market install Scremliss/hub-plugin-wide-feed`).
+Turn it off in the same place, in "Plugins".
 
-## Что внутри
+## What is inside
 
-Только `main.js`: добавляет на страницу один `<style>` — ширину `.feed-inner` и `.dock-inner` и переменную `--measure`.
-Ничего не читает, не отправляет и не вызывает хаб.
+Only `main.js`: it adds one `<style>` to the page — the width of `.feed-inner` and `.dock-inner` and the `--measure`
+variable. It reads nothing, sends nothing and does not call the hub.
 
-## Свои размеры
+## Your own sizes
 
-Откройте `main.js`: `1500px` — максимальная ширина колонки, `125ch` — длина строки, `70px` — боковое поле на широком окне.
+Open `main.js`: `1500px` is the maximum column width, `125ch` the line length, `70px` the side margin on a wide window.
 
-Лицензия — MIT.
+License — MIT.
